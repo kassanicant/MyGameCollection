@@ -1,0 +1,109 @@
+[gd_scene load_steps=11 format=3 uid="uid://dktp5qrifskk8"]
+
+[ext_resource type="Texture2D" uid="uid://d2jrd58i6dv6l" path="res://Assets/BGOff.png" id="1_iukft"]
+[ext_resource type="Script" uid="uid://dmfnsa2ivx71p" path="res://Scenes/Game.gd" id="1_kldst"]
+[ext_resource type="Texture2D" uid="uid://crqqwvkyd1ar5" path="res://Assets/Lights Off.png" id="2_gl6un"]
+[ext_resource type="Texture2D" uid="uid://o4f51yc5ethd" path="res://Assets/Restart.png" id="4_b2bpf"]
+[ext_resource type="Texture2D" uid="uid://b42j1kk2jpct7" path="res://Assets/BGOn.png" id="5_7lihs"]
+[ext_resource type="Texture2D" uid="uid://b2s1k6m1f6up6" path="res://Assets/Next.png" id="6_fgofq"]
+[ext_resource type="Texture2D" uid="uid://dxcbinq8t1rw5" path="res://Assets/submenu.png" id="7_fgofq"]
+[ext_resource type="Texture2D" uid="uid://w1mt7jiewrvd" path="res://Assets/GameOver.png" id="8_bf53h"]
+[ext_resource type="Texture2D" uid="uid://b6lgdjv0leqq3" path="res://Assets/TryAgain.png" id="9_71axn"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_7lihs"]
+font_size = 45
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_kldst")
+
+[node name="Background" type="TextureRect" parent="."]
+offset_left = -4.0
+offset_top = 3.0
+offset_right = 1821.0
+offset_bottom = 3198.0
+scale = Vector2(0.4, 0.4)
+size_flags_horizontal = 0
+texture = ExtResource("1_iukft")
+
+[node name="CeilingLight" type="TextureRect" parent="."]
+offset_left = 252.0
+offset_right = 593.0
+offset_bottom = 361.0
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("2_gl6un")
+
+[node name="GridHolder" type="Node2D" parent="."]
+position = Vector2(365, 407)
+
+[node name="WinPopup" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LightWin" type="TextureRect" parent="WinPopup"]
+layout_mode = 0
+offset_right = 1797.0
+offset_bottom = 3207.0
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("5_7lihs")
+
+[node name="Next" type="TextureButton" parent="WinPopup"]
+layout_mode = 0
+offset_left = 282.0
+offset_top = 813.0
+offset_right = 892.0
+offset_bottom = 1222.0
+scale = Vector2(0.7, 0.7)
+texture_normal = ExtResource("6_fgofq")
+
+[node name="TimerLabel" type="Label" parent="."]
+offset_left = 588.0
+offset_top = 5.0
+offset_right = 703.0
+offset_bottom = 68.0
+theme_override_font_sizes/font_size = 66
+text = "00:00"
+label_settings = SubResource("LabelSettings_7lihs")
+
+[node name="MenuButton" type="TextureButton" parent="."]
+offset_right = 610.0
+offset_bottom = 409.0
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("7_fgofq")
+
+[node name="SubmenuPopup" type="PanelContainer" parent="."]
+offset_left = 9.0
+offset_top = 64.0
+offset_right = 619.0
+offset_bottom = 473.0
+scale = Vector2(0.3, 0.3)
+
+[node name="RestartButton" type="TextureButton" parent="SubmenuPopup"]
+layout_mode = 2
+texture_normal = ExtResource("4_b2bpf")
+
+[node name="GameOverPopup" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TitleImage" type="TextureRect" parent="GameOverPopup"]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 295.0
+offset_right = 711.0
+offset_bottom = 664.0
+texture = ExtResource("8_bf53h")
+
+[node name="TryAgainButton" type="TextureButton" parent="GameOverPopup"]
+layout_mode = 0
+offset_left = 191.0
+offset_top = 891.0
+offset_right = 801.0
+offset_bottom = 1300.0
+scale = Vector2(0.6, 0.6)
+texture_normal = ExtResource("9_71axn")

@@ -1,0 +1,145 @@
+[gd_scene load_steps=7 format=3 uid="uid://dot4mjsxemiq7"]
+
+[ext_resource type="Script" uid="uid://bd300asmueje" path="res://Scenes/Main_Menu.gd" id="1_00u4r"]
+[ext_resource type="Texture2D" uid="uid://d2jrd58i6dv6l" path="res://Assets/BGOff.png" id="1_rmbjf"]
+[ext_resource type="Texture2D" uid="uid://dy25wl2gdf14w" path="res://Assets/Welcome.png" id="2_b7rmo"]
+[ext_resource type="Texture2D" uid="uid://mtcql0823y3i" path="res://Assets/Start.png" id="4_anlgx"]
+[ext_resource type="Texture2D" uid="uid://bos5rubyb3g2n" path="res://Assets/HowToPlayButton.png" id="5_anlgx"]
+[ext_resource type="Texture2D" uid="uid://dgjmnp8jfmmax" path="res://Assets/BackButton.png" id="6_xvotp"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_00u4r")
+
+[node name="BGOff" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1730.0
+offset_top = -37.0
+offset_right = 25.0001
+offset_bottom = 3130.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_rmbjf")
+
+[node name="Welcome" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = -3.0
+offset_right = 1456.0
+offset_bottom = 2207.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_b7rmo")
+expand_mode = 1
+
+[node name="StartButton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 123.0
+offset_top = 515.0
+offset_right = 733.0
+offset_bottom = 924.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("4_anlgx")
+stretch_mode = 1
+
+[node name="HowToPlayButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 726.0
+offset_right = 367.0
+offset_bottom = 770.0
+texture_normal = ExtResource("5_anlgx")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="HowToPlayPopup" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_left = 91.0
+offset_top = 212.0
+offset_right = 515.0
+offset_bottom = 708.0
+
+[node name="ColorRect" type="ColorRect" parent="HowToPlayPopup"]
+layout_mode = 0
+offset_left = -17.0
+offset_right = 428.0
+offset_bottom = 494.0
+color = Color(0.0235294, 0.0235294, 0.0235294, 0.909804)
+
+[node name="Label" type="Label" parent="HowToPlayPopup"]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 34.0
+offset_right = 393.0
+offset_bottom = 57.0
+theme_override_colors/font_color = Color(0.982343, 0.982342, 0.982342, 1)
+theme_override_font_sizes/font_size = 20
+text = "How to Play"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="HowToPlayPopup"]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 77.0
+offset_right = 376.0
+offset_bottom = 128.0
+theme_override_colors/font_color = Color(0.982343, 0.982342, 0.982342, 1)
+theme_override_font_sizes/font_size = 17
+text = "Goal: Turn ALL the lights ON 
+to unlock the door and escape the room."
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="HowToPlayPopup"]
+layout_mode = 0
+offset_left = -8.0
+offset_top = 171.0
+offset_right = 414.0
+offset_bottom = 298.0
+text = "How it Works:
+When you tap a switch, it flips a circuit 
+breaker that affects 5 lights at once:
+The switch you clicked toggles (On<->Off).
+The Top, Bottom, Left, and Right neighbors also toggle."
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="HowToPlayPopup"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 338.0
+offset_right = 421.0
+offset_bottom = 465.0
+theme_override_font_sizes/font_size = 14
+text = "Strategy: Plan your moves carefully! 
+Clicking one light might fix one spot but break another. 
+You must find the perfect pattern to 
+make the whole grid glow."
+horizontal_alignment = 1
+
+[node name="CloseButton" type="TextureButton" parent="HowToPlayPopup"]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 14.0
+offset_right = 28.0
+offset_bottom = 42.0
+texture_normal = ExtResource("6_xvotp")
+ignore_texture_size = true
+stretch_mode = 0

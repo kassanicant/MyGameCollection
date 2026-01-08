@@ -1,0 +1,84 @@
+[gd_scene load_steps=10 format=3 uid="uid://buf6i0rmqygq2"]
+
+[ext_resource type="Texture2D" uid="uid://d2jrd58i6dv6l" path="res://Assets/BGOff.png" id="1_b56eh"]
+[ext_resource type="Script" uid="uid://dg4wqgt27pjlg" path="res://Scenes/LevelSelect.gd" id="1_qwtt3"]
+[ext_resource type="Texture2D" uid="uid://bip0qgvqj5tpe" path="res://Assets/SelectLevel.png" id="2_qwtt3"]
+[ext_resource type="Texture2D" uid="uid://b4tivm7coh6lb" path="res://Assets/LB1.png" id="3_rhsa1"]
+[ext_resource type="Texture2D" uid="uid://c85x57mtr5se5" path="res://Assets/LB2.png" id="4_pp72x"]
+[ext_resource type="Texture2D" uid="uid://bjkj02vymeyjl" path="res://Assets/LB3.png" id="5_7eg28"]
+[ext_resource type="Texture2D" uid="uid://bj0tkg0seicsu" path="res://Assets/LB4.png" id="6_v7iwv"]
+[ext_resource type="Texture2D" uid="uid://ykknb6ulebfx" path="res://Assets/LB5.png" id="7_anenh"]
+[ext_resource type="Texture2D" uid="uid://dgjmnp8jfmmax" path="res://Assets/BackButton.png" id="8_hryoq"]
+
+[node name="LevelSelect" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_qwtt3")
+
+[node name="BGOffSelecetion" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 560.0
+offset_bottom = 860.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_b56eh")
+expand_mode = 1
+
+[node name="SelectLevel" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -16.0
+offset_right = 607.0
+offset_bottom = 393.0
+texture = ExtResource("2_qwtt3")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.057
+anchor_top = 0.193
+anchor_right = 0.455
+anchor_bottom = 0.841
+offset_top = 279.0
+offset_right = -4096.0
+offset_bottom = -4096.0
+scale = Vector2(0.35, 0.35)
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+columns = 3
+
+[node name="BtnLevel1" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("3_rhsa1")
+stretch_mode = 0
+
+[node name="BtnLevel2" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("4_pp72x")
+
+[node name="BtnLevel3" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("5_7eg28")
+
+[node name="BtnLevel4" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("6_v7iwv")
+
+[node name="BtnLevel5" type="TextureButton" parent="GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("7_anenh")
+
+[node name="BackButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 38.0
+offset_right = 81.0
+offset_bottom = 97.0
+texture_normal = ExtResource("8_hryoq")
+ignore_texture_size = true
+stretch_mode = 0

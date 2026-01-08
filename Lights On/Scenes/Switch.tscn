@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dc0bpj3khkua3"]
+
+[ext_resource type="Texture2D" uid="uid://dn0bryil44yyd" path="res://Assets/Switch Off.png" id="1_e7dmm"]
+[ext_resource type="Script" uid="uid://bgwa3dm0aq1ob" path="res://Scenes/Switch.gd" id="2_ji1ep"]
+[ext_resource type="AudioStream" uid="uid://wu7wr4x3johb" path="res://Assets/Switch.wav" id="3_0apyj"]
+
+[node name="Switch" type="TextureButton"]
+offset_left = 226.0
+offset_top = 182.0
+offset_right = 473.0
+offset_bottom = 522.0
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("1_e7dmm")
+stretch_mode = 0
+script = ExtResource("2_ji1ep")
+
+[node name="SwitchSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_0apyj")
+volume_db = 2.971
