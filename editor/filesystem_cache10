@@ -1,0 +1,17 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1767860979
+icon.svg::CompressedTexture2D/CompressedTexture2D::5685668083259582610::1767683628::1767683643::1::::<><><>0<>0<>f798e2a490c2469823ec3c5e318b7318<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+MainMenu.tscn::PackedScene::3399010155820087805::1767860979::0::1::::<><><>0<>0<><>::uid://c2hbgmu1v4r06::::res://MainMenu.gd<>uid://3rfmp5ib6abs::::res://Assets/MainMenuBG.png<>uid://dassv30jnqpvh::::res://Assets/Lights On.png<>uid://q1uei2ynscwm::::res://Assets/YellowButton.png<>uid://br4dwgk3lkh5x::::res://Assets/YellowPushButton.png<>uid://bgn3lygaimqlr::::res://Assets/Jersey10-Regular.ttf<>uid://dwo40h5gu7m03::::res://Assets/QuitBtn.png
+MainMenu.gd::GDScript::6682462884034525229::1767860959::0::1::::<>Control<><>0<>0<><>::
+::res://Assets/::1767861026
+Jersey10-Regular.ttf::FontFile::2836111645694898471::1767860382::1767860383::1::::<><><>0<>0<>724fe6926ab4e571fb479b4211b77eeb<>res://.godot/imported/Jersey10-Regular.ttf-a407d164d6a7469c1374cb924433c86a.fontdata::
+Jua-Regular.ttf::FontFile::4808501437046036395::1767860385::1767860385::1::::<><><>0<>0<>c8c85116d5600c9bb2cfc251cf2247a1<>res://.godot/imported/Jua-Regular.ttf-5ab13edc4f19ac7f5a596ea5dfbd5c02.fontdata::
+Lights Off.png::CompressedTexture2D::1127302015712236140::1767861026::1767861026::1::::<><><>0<>0<>c4c7f956459b5bd78cbc5dbc7ddc5736<>res://.godot/imported/Lights Off.png-cb0014977dcf06121ccae484dfc5da8e.ctex::
+Lights On.png::CompressedTexture2D::7197552767895030845::1767860178::1767860179::1::::<><><>0<>0<>3afb6b4ac121d238fd1d371ee22f9a46<>res://.godot/imported/Lights On.png-9a7d1d5de05d4ce5f54b289d5f213c07.ctex::
+MainMenuBG.png::CompressedTexture2D/CompressedTexture2D::2000707892735036860::1767685170::1767685212::1::::<><><>0<>0<>b8582537b7e0f0718721da46ca966393<>res://.godot/imported/MainMenuBG.png-8461dbb50df0316347400a48ea930dea.ctex::
+QuitBtn.png::CompressedTexture2D::8734123751618897566::1767860807::1767860807::1::::<><><>0<>0<>2e22ec4c73f64f75effd94b32bd541aa<>res://.godot/imported/QuitBtn.png-bc643635195cab1364307c77a4f052ad.ctex::
+Silver.ttf::FontFile::6547720309401968259::1767860376::1767860377::1::::<><><>0<>0<>8a047d99f5cdfa41bc9b1f59021eb1b7<>res://.godot/imported/Silver.ttf-d8d9398e3589ba11f0676068c0b9856f.fontdata::
+YellowButton.png::CompressedTexture2D::1177917265850074656::1767860202::1767860203::1::::<><><>0<>0<>c0a9d85ac390fc60fbcfae1a2dfee197<>res://.godot/imported/YellowButton.png-ef501a6ee52a73c5ed2a3b024d7ac896.ctex::
+YellowPushButton.png::CompressedTexture2D::3639719750727030959::1767860205::1767860206::1::::<><><>0<>0<>46c33141b7b5dd5b8a5bfb98320b5689<>res://.godot/imported/YellowPushButton.png-954007f62c8303062f58977dd65cc11c.ctex::
+::res://LightsOn/::1767682975
+::res://SimonSays/::1767682990
