@@ -1,0 +1,104 @@
+[gd_scene load_steps=10 format=3 uid="uid://b4ga2n16q7oeg"]
+
+[ext_resource type="Script" uid="uid://biih0nmaux4do" path="res://MainMenu.gd" id="1_qoqlk"]
+[ext_resource type="Texture2D" uid="uid://ccmj0ovoigdab" path="res://AssetS/BackgroundMainMenu.png" id="2_iwfq2"]
+[ext_resource type="Texture2D" uid="uid://dpiice0c0a2c4" path="res://AssetS/PlayButton.png" id="3_7r1g0"]
+[ext_resource type="AudioStream" uid="uid://buhg3uw8v2yig" path="res://AssetS/Sounds/SimonSaysBackgroundMusic.ogg" id="4_cqjrg"]
+[ext_resource type="Texture2D" uid="uid://cv83kb5wl2ij1" path="res://AssetS/HowToPlayBtn.png" id="5_cqjrg"]
+[ext_resource type="FontFile" uid="uid://b6roq2d5tmorj" path="res://AssetS/Jersey10-Regular.ttf" id="6_e2xy7"]
+[ext_resource type="Texture2D" uid="uid://w2f2a7tq50j3" path="res://AssetS/SettingsButton.png" id="6_fimr5"]
+[ext_resource type="Texture2D" uid="uid://da7fqkcrqax4d" path="res://AssetS/BackBtn.png" id="7_fimr5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u7cqb"]
+bg_color = Color(0.109804, 0.109804, 0.109804, 0.905882)
+
+[node name="MainMenu" type="Control" node_paths=PackedStringArray("play_button", "how_to_play_button", "how_to_play_panel", "panel_back_button")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qoqlk")
+play_button = NodePath("PlayButton")
+how_to_play_button = NodePath("HowToPlayButton")
+how_to_play_panel = NodePath("HowToPlayPanel")
+panel_back_button = NodePath("HowToPlayPanel/PanelBackButton")
+
+[node name="MainMenuBackground" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 606.0
+texture = ExtResource("2_iwfq2")
+expand_mode = 1
+
+[node name="PlayButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 281.0
+offset_right = 282.0
+offset_bottom = 352.0
+texture_normal = ExtResource("3_7r1g0")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MenuMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_cqjrg")
+autoplay = true
+
+[node name="HowToPlayButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 154.0
+offset_top = 518.0
+offset_right = 248.0
+offset_bottom = 563.0
+texture_normal = ExtResource("5_cqjrg")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="SettingsButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 19.0
+offset_right = 54.0
+offset_bottom = 63.0
+texture_normal = ExtResource("6_fimr5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="HowToPlayPanel" type="Panel" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 42.0
+offset_top = 53.0
+offset_right = 364.0
+offset_bottom = 327.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_u7cqb")
+
+[node name="HowToPlayLabel" type="Label" parent="HowToPlayPanel"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 12.0
+offset_right = 317.0
+offset_bottom = 213.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.0605303, 0.0605304, 0.0605303, 1)
+theme_override_fonts/font = ExtResource("6_e2xy7")
+theme_override_font_sizes/font_size = 28
+text = "HOW TO PLAY
+
+WATCH the pattern.
+REPEAT the sequence.
+SURVIVE as it gets faster.
+One mistake and it's GAME OVER."
+horizontal_alignment = 1
+
+[node name="PanelBackButton" type="TextureButton" parent="HowToPlayPanel"]
+layout_mode = 0
+offset_left = 131.0
+offset_top = 218.0
+offset_right = 184.0
+offset_bottom = 270.0
+texture_normal = ExtResource("7_fimr5")
+ignore_texture_size = true
+stretch_mode = 0

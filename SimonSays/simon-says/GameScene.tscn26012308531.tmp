@@ -1,0 +1,288 @@
+[gd_scene load_steps=40 format=3 uid="uid://di21mqwyre0tp"]
+
+[ext_resource type="Script" uid="uid://0thag6ghxeqv" path="res://GameScene.gd" id="1_fxfis"]
+[ext_resource type="Texture2D" uid="uid://dfdv8kwe6chkq" path="res://AssetS/GameSceneBackground.png" id="2_fsk3a"]
+[ext_resource type="FontFile" uid="uid://bixcmwulmffps" path="res://AssetS/Silver.ttf" id="3_y0td7"]
+[ext_resource type="Texture2D" uid="uid://da7fqkcrqax4d" path="res://AssetS/BackBtn.png" id="5_fsk3a"]
+[ext_resource type="FontFile" uid="uid://b6roq2d5tmorj" path="res://AssetS/Jersey10-Regular.ttf" id="6_0qy1f"]
+[ext_resource type="AudioStream" uid="uid://c8h1726q474u4" path="res://AssetS/Sounds/GameOver.wav" id="7_s8bal"]
+[ext_resource type="Texture2D" uid="uid://b1eb51tb3j62y" path="res://AssetS/BlueButton.png" id="8_4iqu7"]
+[ext_resource type="Texture2D" uid="uid://d14bufp7ygvum" path="res://AssetS/BluePushButton.png" id="9_3g52j"]
+[ext_resource type="AudioStream" uid="uid://dgpbeihecx3g0" path="res://AssetS/Sounds/BluePushSound.wav" id="10_b3pp0"]
+[ext_resource type="Texture2D" uid="uid://c20r1ajcknq5c" path="res://AssetS/GreenButton.png" id="11_ybhw4"]
+[ext_resource type="Texture2D" uid="uid://bueamcccpbby8" path="res://AssetS/GreenPushButton.png" id="12_kba41"]
+[ext_resource type="AudioStream" uid="uid://qhm5wock1sru" path="res://AssetS/Sounds/GreenPushSound.wav" id="13_lul5g"]
+[ext_resource type="Texture2D" uid="uid://b28i7birr2jr3" path="res://AssetS/LimeButton.png" id="14_tm1sv"]
+[ext_resource type="Texture2D" uid="uid://1b4cjg40qc0s" path="res://AssetS/LimePushButton.png" id="15_gd15m"]
+[ext_resource type="AudioStream" uid="uid://oitpr8kw3nb4" path="res://AssetS/Sounds/LimePushSound.wav" id="16_kfejs"]
+[ext_resource type="Texture2D" uid="uid://b1a7pok6566v2" path="res://AssetS/OrangeButton.png" id="17_87na4"]
+[ext_resource type="Texture2D" uid="uid://4c3qdpadsufp" path="res://AssetS/OrangePushButton.png" id="18_od6yw"]
+[ext_resource type="AudioStream" uid="uid://cs42lampos0tv" path="res://AssetS/Sounds/OrangePushSound.wav" id="19_31x0w"]
+[ext_resource type="Texture2D" uid="uid://gsabwqkxxdoh" path="res://AssetS/RedButton.png" id="20_6j76h"]
+[ext_resource type="Texture2D" uid="uid://bo354sp61avhg" path="res://AssetS/RedPushButton.png" id="21_rrp7n"]
+[ext_resource type="AudioStream" uid="uid://g617h5g08ie2" path="res://AssetS/Sounds/RedPushSound.wav" id="22_8uqg6"]
+[ext_resource type="Texture2D" uid="uid://cht4usp6slw6h" path="res://AssetS/SkyBlueButton.png" id="23_igvw6"]
+[ext_resource type="Texture2D" uid="uid://bafho23i1edm7" path="res://AssetS/PinkButton.png" id="23_vpbl4"]
+[ext_resource type="Texture2D" uid="uid://42a422ub83sx" path="res://AssetS/SkyBluePushButton.png" id="24_n1fdl"]
+[ext_resource type="Texture2D" uid="uid://y2n0yyk0baji" path="res://AssetS/PinkPushButton.png" id="24_ydsku"]
+[ext_resource type="AudioStream" uid="uid://dywudckq2omc2" path="res://AssetS/Sounds/PinkPushSound.wav" id="25_73g1s"]
+[ext_resource type="Texture2D" uid="uid://b6pt2x8x2bjv8" path="res://AssetS/YellowButton.png" id="26_j4iiw"]
+[ext_resource type="Texture2D" uid="uid://mgomqw5vw3mu" path="res://AssetS/YellowPushButton.png" id="27_efkgs"]
+[ext_resource type="AudioStream" uid="uid://hbanuloimj27" path="res://AssetS/Sounds/YellowPushSound.wav" id="28_vg1g3"]
+[ext_resource type="Texture2D" uid="uid://he66udg3aa0g" path="res://AssetS/PurpleButton.png" id="29_gvrjw"]
+[ext_resource type="Texture2D" uid="uid://chtyfg7v0wmv" path="res://AssetS/PurplePushButton.png" id="30_mtbg2"]
+[ext_resource type="AudioStream" uid="uid://bjoqwo6nrnln8" path="res://AssetS/Sounds/PurplePushSound.wav" id="31_kk7vx"]
+[ext_resource type="AudioStream" uid="uid://cp47ip84a4ax8" path="res://AssetS/Sounds/SkyBluePushSound.wav" id="33_y0td7"]
+[ext_resource type="Texture2D" uid="uid://cmdn2wm313idn" path="res://AssetS/GameoverMessage.png" id="34_0qy1f"]
+[ext_resource type="Texture2D" uid="uid://40p7i4nma4tb" path="res://AssetS/RetryBtn.png" id="35_s8bal"]
+[ext_resource type="Texture2D" uid="uid://di2thfpmi7ni" path="res://AssetS/MainMenuBtn.png" id="36_4iqu7"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fxfis"]
+font = ExtResource("6_0qy1f")
+font_size = 80
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3g52j"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_0qy1f"]
+font = ExtResource("6_0qy1f")
+font_size = 40
+font_color = Color(0, 0, 0, 1)
+
+[node name="GameScene" type="Control" node_paths=PackedStringArray("back_button", "countdown_label", "score_label", "message_label", "buttons", "sounds", "turn_timer", "button_grid")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fxfis")
+back_button = NodePath("BackButton")
+countdown_label = NodePath("CountdownLabel")
+score_label = NodePath("ScoreLabel")
+message_label = NodePath("MessageLabel")
+buttons = [NodePath("ButtonGrid/GreenBtn"), NodePath("ButtonGrid/LimeBtn"), NodePath("ButtonGrid/BlueBtn"), NodePath("ButtonGrid/OrangeBtn"), NodePath("ButtonGrid/PinkBtn"), NodePath("ButtonGrid/RedBtn"), NodePath("ButtonGrid/YellowBtn"), NodePath("ButtonGrid/PurpleBtn"), NodePath("ButtonGrid/SkyBlueBtn")]
+sounds = [NodePath("ButtonGrid/GreenBtn/GreenPushSound"), NodePath("ButtonGrid/LimeBtn/LimePushSound"), NodePath("ButtonGrid/BlueBtn/BluePushSound"), NodePath("ButtonGrid/OrangeBtn/OrangePushSound"), NodePath("ButtonGrid/PinkBtn/PinkPushSound"), NodePath("ButtonGrid/RedBtn/RedPushSound"), NodePath("ButtonGrid/YellowBtn/YellowPushSound"), NodePath("ButtonGrid/PurpleBtn/PurplePushSound"), NodePath("ButtonGrid/SkyBlueBtn/SkyBluePushSound")]
+turn_timer = NodePath("TurnTimer")
+button_grid = NodePath("ButtonGrid")
+
+[node name="BackgroundImage" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 398.0
+offset_bottom = 600.0
+texture = ExtResource("2_fsk3a")
+expand_mode = 1
+
+[node name="BackButton" type="TextureButton" parent="."]
+process_mode = 3
+layout_mode = 0
+offset_left = 10.0
+offset_top = 12.0
+offset_right = 56.0
+offset_bottom = 56.0
+texture_normal = ExtResource("5_fsk3a")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ScoreLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 46.0
+offset_right = 249.0
+offset_bottom = 113.0
+theme_override_fonts/font = ExtResource("3_y0td7")
+theme_override_font_sizes/font_size = 60
+horizontal_alignment = 1
+
+[node name="MessageLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 261.0
+offset_top = 7.0
+offset_right = 392.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_0qy1f")
+theme_override_font_sizes/font_size = 30
+horizontal_alignment = 2
+
+[node name="GameOverSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_s8bal")
+
+[node name="TurnTimer" type="Timer" parent="."]
+
+[node name="ButtonGrid" type="GridContainer" parent="."]
+layout_mode = 0
+offset_left = 91.0
+offset_top = 162.0
+offset_right = 464.0
+offset_bottom = 602.0
+scale = Vector2(0.6, 0.6)
+columns = 3
+
+[node name="GreenBtn" type="TextureButton" parent="ButtonGrid"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture_normal = ExtResource("11_ybhw4")
+texture_pressed = ExtResource("12_kba41")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="GreenPushSound" type="AudioStreamPlayer" parent="ButtonGrid/GreenBtn"]
+stream = ExtResource("13_lul5g")
+
+[node name="LimeBtn" type="TextureButton" parent="ButtonGrid"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture_normal = ExtResource("14_tm1sv")
+texture_pressed = ExtResource("15_gd15m")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="LimePushSound" type="AudioStreamPlayer" parent="ButtonGrid/LimeBtn"]
+stream = ExtResource("16_kfejs")
+
+[node name="BlueBtn" type="TextureButton" parent="ButtonGrid"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture_normal = ExtResource("8_4iqu7")
+texture_pressed = ExtResource("9_3g52j")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="BluePushSound" type="AudioStreamPlayer" parent="ButtonGrid/BlueBtn"]
+stream = ExtResource("10_b3pp0")
+
+[node name="OrangeBtn" type="TextureButton" parent="ButtonGrid"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture_normal = ExtResource("17_87na4")
+texture_pressed = ExtResource("18_od6yw")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="OrangePushSound" type="AudioStreamPlayer" parent="ButtonGrid/OrangeBtn"]
+stream = ExtResource("19_31x0w")
+
+[node name="PinkBtn" type="TextureButton" parent="ButtonGrid"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture_normal = ExtResource("23_vpbl4")
+texture_pressed = ExtResource("24_ydsku")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="PinkPushSound" type="AudioStreamPlayer" parent="ButtonGrid/PinkBtn"]
+stream = ExtResource("25_73g1s")
+
+[node name="RedBtn" type="TextureButton" parent="ButtonGrid"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture_normal = ExtResource("20_6j76h")
+texture_pressed = ExtResource("21_rrp7n")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="RedPushSound" type="AudioStreamPlayer" parent="ButtonGrid/RedBtn"]
+stream = ExtResource("22_8uqg6")
+
+[node name="YellowBtn" type="TextureButton" parent="ButtonGrid"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture_normal = ExtResource("26_j4iiw")
+texture_pressed = ExtResource("27_efkgs")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="YellowPushSound" type="AudioStreamPlayer" parent="ButtonGrid/YellowBtn"]
+stream = ExtResource("28_vg1g3")
+
+[node name="PurpleBtn" type="TextureButton" parent="ButtonGrid"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+texture_normal = ExtResource("29_gvrjw")
+texture_pressed = ExtResource("30_mtbg2")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="PurplePushSound" type="AudioStreamPlayer" parent="ButtonGrid/PurpleBtn"]
+stream = ExtResource("31_kk7vx")
+
+[node name="SkyBlueBtn" type="TextureButton" parent="ButtonGrid"]
+custom_minimum_size = Vector2(120, 129)
+layout_mode = 2
+texture_normal = ExtResource("23_igvw6")
+texture_pressed = ExtResource("24_n1fdl")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="SkyBluePushSound" type="AudioStreamPlayer" parent="ButtonGrid/SkyBlueBtn"]
+stream = ExtResource("33_y0td7")
+
+[node name="CountdownLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 176.0
+offset_top = 230.0
+offset_right = 229.0
+offset_bottom = 317.0
+label_settings = SubResource("LabelSettings_fxfis")
+horizontal_alignment = 1
+
+[node name="GameOverPanel" type="Panel" parent="."]
+visible = false
+z_index = 10
+layout_mode = 0
+offset_left = 68.0
+offset_top = 136.0
+offset_right = 338.0
+offset_bottom = 431.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_3g52j")
+
+[node name="GameOver" type="TextureRect" parent="GameOverPanel"]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 43.0
+offset_right = 219.0
+offset_bottom = 157.0
+texture = ExtResource("34_0qy1f")
+expand_mode = 1
+
+[node name="FinalScoreLabel" type="Label" parent="GameOverPanel"]
+layout_mode = 0
+offset_left = 108.0
+offset_top = 169.0
+offset_right = 167.0
+offset_bottom = 233.0
+text = "0"
+label_settings = SubResource("LabelSettings_0qy1f")
+horizontal_alignment = 1
+
+[node name="RestartButton" type="TextureButton" parent="GameOverPanel"]
+layout_mode = 0
+offset_left = 162.0
+offset_top = 228.0
+offset_right = 215.0
+offset_bottom = 284.0
+texture_normal = ExtResource("35_s8bal")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MainMenuButton" type="TextureButton" parent="GameOverPanel"]
+layout_mode = 0
+offset_left = 57.0
+offset_top = 231.0
+offset_right = 114.0
+offset_bottom = 286.0
+texture_normal = ExtResource("36_4iqu7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="timeout" from="TurnTimer" to="." method="_on_turn_timer_timeout"]
+[connection signal="pressed" from="ButtonGrid/GreenBtn" to="." method="_on_green_btn_pressed"]
+[connection signal="pressed" from="ButtonGrid/LimeBtn" to="." method="_on_lime_btn_pressed"]
+[connection signal="pressed" from="ButtonGrid/BlueBtn" to="." method="_on_blue_btn_pressed"]
+[connection signal="pressed" from="ButtonGrid/OrangeBtn" to="." method="_on_orange_btn_pressed"]
+[connection signal="pressed" from="ButtonGrid/PinkBtn" to="." method="_on_pink_btn_pressed"]
+[connection signal="pressed" from="ButtonGrid/RedBtn" to="." method="_on_red_btn_pressed"]
+[connection signal="pressed" from="ButtonGrid/YellowBtn" to="." method="_on_yellow_btn_pressed"]
+[connection signal="pressed" from="ButtonGrid/PurpleBtn" to="." method="_on_purple_btn_pressed"]
+[connection signal="pressed" from="ButtonGrid/SkyBlueBtn" to="." method="_on_sky_blue_btn_pressed"]
